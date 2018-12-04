@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Survey Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+    <script src="main.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <!------------------->
+</head>
+
+<body>
+
+    <!------TITLE-------->
+    <h1 class="text-center" id="title">Survey Form</h1>
+    <!------------------->
+
+    <!--FORM-JUMBOTRON-->
+    <div class="container jumbotron">
+        <p id="description">
+            Let us know how we can improve CEEA App.
+        </p>
+
+        <form id="survey-form">
+            <div class="form-group" id="name">
+                <label for="exampleInputName" id="name-label">Name</label>
+                <input type="text" class="form-control" id="exampleInputName" placeholder="Name">
+            </div>
+            <div class="form-group" id="email">
+                <label for="exampleInputEmail1" id="email-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group" id="number">
+                <label for="exampleInputAge" id="number-label">Age</label>
+                <input type="number" min="1" max="100" class="form-control" id="exampleInputAge" placeholder="Age">
+            </div>
+            <div class="form-group" id="dropdown">
+                <label for="exampleFormControlSelect1">Which option best describes your current role?</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                    <option disabled value>Select an option</option>
+                    <option value="student">Student</option>
+                    <option value="job">Full Time Job</option>
+                    <option value="learner">Full Time Learner</option>
+                    <option value="preferNo">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>* How likely is that you would recommend CEEA to a friend?</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="radio-buttons" id="exampleRadios1" value="Definitely"
+                        checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                        Definitely
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="radio-buttons" id="exampleRadios2" value="Maybe">
+                    <label class="form-check-label" for="exampleRadios2">
+                        Maybe
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="radio-buttons" id="exampleRadios2" value="Not sure">
+                    <label class="form-check-label" for="exampleRadios2">
+                        Not sure
+                    </label>
+                </div>
+            </div>
+            <div class="form-group" id="dropdown">
+                <label for="exampleFormControlSelect1">What do you like most in CEEA:</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                    <option disabled value>Select an option</option>
+                    <option value="challenges">Challenges</option>
+                    <option value="projects">Projects</option>
+                    <option value="community">Community</option>
+                    <option value="openSource">Open Source</option>
+                </select>
+            </div>
+            <div class="form-group" id="preferences">
+                <label>Things that should be improved in the future
+                    (Check all that apply):</label>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" value="More images" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">More images</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" value="More songs" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">More songs</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" value="Better design" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Better design</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="comments">Any Comments or Suggestions?</label>
+                <textarea class="form-control" id="comments" rows="3" name="comment" placeholder="Enter your comment here..."></textarea>
+            </div>
+
+            <button type="submit" id="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
+        </form>
+
+    </div>
+    <!--------------->
+
+
+
+</body>
+
+</html>
